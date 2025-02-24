@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'TT Supermolot Neue'; 
+    src: url('fonts/TTSupermolotNeue-Regular.woff2') format('woff2'), 
+         url('fonts/TTSupermolotNeue-Regular.woff') format('woff');   
+    font-weight: normal; 
+    font-style: normal;  
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+body {
+    /* font-family: "Golos Text", serif; */
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+}
+.container {
+    max-width: 1444px;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 705px;
+    margin: 0 auto;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    padding-top: 150px;
+}
+.grid-item{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.grid-item-negative-value-button{
+    border: solid 1px #E4002B;
+    background-color: #E4002B;
+    transform: skew(350deg);
+    margin-right: 2px;
+    width: 258px;
+}
+.grid-item-negative-value-ArrowDown{
+    border: solid 1px #E4002B;
+    background-color: #E4002B;
+    transform: skew(350deg);
+    margin-right: 2px;
+}
+.grid-item-text{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'TT Supermolot Neue', sans-serif;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transform: skew(-350deg);
+    width: 100%;
+    text-align: start;
+}
+.grid-item-img{
+    width: 22px;
+    height: auto;
+    padding: 26.9px 20px;
+    transform: skew(-350deg);
+}
+.grid-item-negative-value{
+    display: flex;
+    position: relative;
+    transform: skew(350deg);
+    
+}
+.grid-item-negative-value::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 115%;
+    height: 1px;
+    left: -9px;
+    top: 0;
+    background-color: #E4002B;
+    transform: skew(350deg);
+    margin-top: 7px;
+}
+.grid-item-negative-value::after {
+    content: "";
+    position: absolute;
+    width: 1px; /* Толщина линии */
+    height: 85%; /* Высота левой линии */
+    background-color: #E4002B; /* Цвет линии */
+    top: 0; /* Выравниваем линию сверху */
+    left: -10px; /* Сдвигаем линию влево */
+    transform: skewY(30deg); /* Наклон линии */
+    margin-top: 7px;
+}
