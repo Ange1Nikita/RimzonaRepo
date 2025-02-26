@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalazi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Golos+Text:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400..800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400..800&display=swap"
+        rel="stylesheet">
+    <script src="/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__grid">
+                <div class="header__grid-logo">
+                    <img src="logo.svg" alt="">
+                </div>
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">О лаборатории</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__search">
+                    <img src="search.svg" alt="" class="header__search-img">
+                    <img src="log-in.svg" alt="" class="header__search-img">
+                </div>
+                <!-- Бургер-кнопка -->
+                <div class="menu-button">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Мобильное меню -->
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Галерея</a></li>
+                <li><a href="#">О лаборатории</a></li>
+                <li><a href="#">Контакты</a></li>
+                <div class="header__search-mobile">
+                    <img src="search.svg" alt="" class="header__search-img">
+                    <img src="log-in.svg" alt="">
+                </div>
+            </ul>
+        </div>
+        <!-- <img src="1_1.svg" alt="" class="img-hero"> -->
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__flex">
+                    <div class="hero__flex-item">
+                        <p class="hero_flex-item-title">Крупнейшая коллекция природных артефактов</p>
+                    </div>
+                    <div class="hero_flex-item">
+                        <p class="hero__flex-subtitle">
+                            Являясь всего лишь частью общей картины,
+                            интерактивные прототипы, которые представляют
+                            собой яркий пример европейского типа политической
+                            и социальной культуры.
+                        </p>
+                    </div>
+                    <div class="hero__flex-item">
+                        <p class="hero__flex-research">
+                            <a href="">Исследовать</a>
+                        </p>
+                        <p class="arrow-right">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="artifacts">
+            <div class="container">
+                <div class="owl-carousel owl-item"> <!-- Добавьте класс 'owl-theme' -->
+                    <div>
+                        <img src="Frame 223.svg" alt="">
+                        <p class="owl-item-title">
+                            Fig. 1 (plant)
+                        </p>
+                        <p class="owl-item-subtitle">
+                            Имеется спорная точка зрения,
+                            гласящая примерно следующее: активно
+                            развивающиеся страны третьего мира
+                            своевременно верифицированы.
+                        </p>
+                        <p class="owl-item-more">
+                            Подробнее
+                        </p>
+                    </div>
+                    <div>
+                        <img src="Frame 224.svg" alt="">
+                        <p class="owl-item-title">
+                            Fig. 2 (flower)
+                        </p>
+                        <p class="owl-item-subtitle">
+                            Прежде всего, синтетическое тестирование
+                            влечет за собой процесс внедрения и
+                            модернизации условий..
+                        </p>
+                        <p class="owl-item-more">
+                            Подробнее
+                        </p>
+                    </div>
+                    <div>
+                        <img src="Frame 225.svg" alt="">
+                        <p class="owl-item-title">
+                            Fig. 3 (leaf)
+                        </p>
+                        <p class="owl-item-subtitle">
+                            Лишь непосредственные участники прогресса неоднозначны
+                            и будут в равной степени предоставлены
+                            сами себе для работы.
+                        </p>
+                        <p class="owl-item-more">
+                            Подробнее
+                        </p>
+                    </div>
+                    <div>
+                        <img src="Frame 226.svg" alt="">
+                        <p class="owl-item-title">
+                            Fig. 4 (wood)
+                        </p>
+                        <p class="owl-item-subtitle">
+                            Базовый вектор развития не даёт нам иного выбора,
+                            кроме определения новых предложений.
+                        </p>
+                        <p class="owl-item-more">
+                            Подробнее
+                        </p>
+                    </div>
+                    <div>
+                        <img src="Frame 223.svg" alt="">
+                        <p class="owl-item-title">
+                            Fig. 1 (plant)
+                        </p>
+                        <p class="owl-item-subtitle">
+                            Имеется спорная точка зрения,
+                            гласящая примерно следующее: активно
+                            развивающиеся страны третьего мира
+                            своевременно верифицированы.
+                        </p>
+                        <p class="owl-item-more">
+                            Подробнее
+                        </p>
+                    </div>
+                    <div>
+                        <img src="Frame 224.svg" alt="">
+                        <p class="owl-item-title">
+                            Fig. 1 (plant)
+                        </p>
+                        <p class="owl-item-subtitle">
+                            Имеется спорная точка зрения,
+                            гласящая примерно следующее: активно
+                            развивающиеся страны третьего мира
+                            своевременно верифицированы.
+                        </p>
+                        <p class="owl-item-more">
+                            Подробнее
+                        </p>
+                    </div>
+                </div>
+                <div class="new__artifacts">
+                    <p class="new__artifacts-title">
+                        Новые артефакты
+                    </p>
+                    <div class="new__artifacts-grid">
+                        <div class="new__artifacts-grid-item">
+                            <img src="Group 220.svg" alt="" class="new__artifacts-grid-item-img">
+                        </div>
+                        <div class="new__artifacts-grid-item">
+                            <p class="new__artifacts-grid-item-title">
+                                Kurische Nehrung 24
+                            </p>
+                            <p class="new__artifacts-grid-item-subtitle">
+                                Вот вам яркий пример современных
+                                тенденций - начало повседневной работы по
+                                формированию позиции выявляет срочную потребность
+                                методов управления процессами.<br>
+                                <br>
+                                Есть над чем задуматься: представители
+                                современных социальных резервов своевременно
+                                верифицированы.
+                            </p>
+                            <div class="hero__flex-item">
+                                <p class="new__artifacts-grid-item-read-more">
+                                    Читать далее
+                                </p>
+                                <p class="arrow-right-second">
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="help__project">
+            <div class="container">
+                <div class="help__project-flex">
+                    <div class="help__project-flex-item">
+                        <p class="help__project-flex-item-title">
+                            Помочь проекту
+                        </p>
+                        <p class="help__project-flex-item-subtitle">
+                            Равным образом, экономическая повестка
+                            сегодняшнего дня не даёт нам иного выбора,
+                            кроме определения прогресса профессионального
+                            сообщества. Как принято считать, элементы политического
+                            процесса рассмотрены исключительно в разрезе маркетинговых
+                            и финансовых предпосылок.
+                        </p>
+                    </div>
+                    <div class="help__project-flex-item">
+                        <input class="help__project-input" type="text" placeholder="Имя">
+                        <input class="help__project-input" type="text" placeholder="Email">
+                        <p class="help__project-button">
+                            Заказать звонок
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+
+</html>
