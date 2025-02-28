@@ -51,29 +51,4 @@ $(document).ready(function () {
       }
   });
 
-  // Инициализация Owl Carousel
-  if ($('.owl-carousel').length) {
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 30, // Отступ между элементами
-        stagePadding: 0,
-        autoWidth: false,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        nav: true,
-        dots: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            400: {
-                items: 2
-            },
-            610: {
-                items: 4
-            }
-        }
-    });
-}
 });

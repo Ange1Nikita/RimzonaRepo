@@ -28,11 +28,12 @@ a {
     text-decoration: none;
     color: white;
     margin: 0;
+    width: 50%;
 }
 
 .container {
     max-width: 1110px;
-    width: 100%;
+    /* width: 100%; */
     padding-left: calc(33px + (165 - 33) * (min(100vw, 1920px) - 320px) / (1920 - 320));
     padding-right: clamp(33px, 8.59vw, 165px);
     margin: 0 auto;
@@ -221,6 +222,7 @@ header {
     font-size: 16px;
 }
 
+
 .arrow-right {
     width: 43px;
     height: 2px;
@@ -252,6 +254,17 @@ header {
 }
 
 
+/* Изменение цвета при наведении */
+.hero__flex-item:hover .hero__flex-research a {
+    color: #91AC46; /* Меняем только цвет текста */
+    transition: 0.3s;
+}
+.hero__flex-item:hover .arrow-right,
+.hero__flex-item:hover .arrow-right::before,
+.hero__flex-item:hover .arrow-right::after {
+    background-color: #91AC46; /* Меняем цвет стрелочки */
+    transition: 0.3s;
+}
 /* artifacts */
 .artifacts {
     background-position: center;
@@ -262,74 +275,100 @@ header {
     padding-bottom: 65px;
 }
 
-.owl-carousel {
+.inner {
+    position: relative;
+}
+
+.swiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    /* Ширина равна ширине родительского контейнера */
+    position: relative;
     overflow: hidden;
-    /* Скрываем лишнее содержимое */
+
 }
 
-/* Элементы слайдера */
-.owl-item {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    align-items: end;
+.swiper-slide {
+    box-sizing: border-box;
+    /* Учитывает padding и border в ширине слайда */
+    display: flex;
+    /* Для центрирования содержимого */
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-wrapper {}
+
+.swiper-slide-item {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #0B1919;
+    width: 253px;
+    height: 437px;
+
+}
+.more-item{
+    display: flex;
     justify-content: end;
-    text-align: left;
-    height: 414px;
-    margin-right: 30px;
-    /* Отступ между слайдами */
-    color: white;
-    /* Цвет текста */
-    padding: 20px;
-    /* Отступы внутри слайда */
+    align-items: end;
+}
+.swiper-slide-item-img {
+    max-width: 69%;
+    width: auto;
+    height: auto;
+    max-height: 180px;
 }
 
-.owl-item:last-child {
-    margin-right: 0;
-    /* Убираем отступ у последнего слайда */
-}
-
-.owl-carousel img {
-    width: 255px;
-    height: 180px;
-    object-fit: cover;
-    /* Изображение масштабируется без искажений */
-    margin-bottom: 20px;
-    /* Отступ под изображением */
-}
-
-.owl-item-title {
+.swiper-slide-item-title {
+    padding-top: 16px;
+    padding-left: 16px;
     font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    padding-left: 16px;
+    color: white;
+
 }
 
-.owl-item-subtitle {
+.swiper-slide-item-subtitle {
+    padding-left: 16px;
     font-size: 16px;
-    font-weight: 400;
     color: #899D9D;
-    width: 65%;
-    padding-left: 16px;
-    padding-bottom: 44px;
+    width: 90%;
+    font-family: "Open Sans", serif;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    height: 168px;
 }
-
-.owl-item-more {
+a .more{
     font-size: 16px;
-    font-weight: 400;
-    color: #BAE249;
+    font-family: "Open Sans", serif;
     border: solid 1px #BAE249;
-    padding: 12px;
-    width: 50%;
+    padding: 10px;
+    width: 100%;
     margin-left: 16px;
-
+    margin-bottom: 19px;
     text-align: center;
+    color: #BAE249;
+
+}
+a .more:hover{
+    background-color: #BAE249;
+    transition: 0.3s;
+    color: #0B1919;
+}
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: -30px;
 }
 
-/* Адаптивность ширины элементов */
-.owl-carousel .owl-stage-outer .owl-stage .owl-item {
-    width: calc(100% / 4);
+.swiper-pagination-bullet {
+    background-color: #0B1919;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #BAE249;
 }
 
 .new__artifacts-title {
@@ -364,13 +403,26 @@ header {
     padding-left: 16px;
 }
 
-.new__artifacts-grid-item-read-more {
+.new__artifacts-grid-item-read-more{
     font-size: 16px;
     font-weight: 700;
     font-family: "Open Sans", serif;
     padding-top: 74px;
     padding-left: 16px;
     padding-bottom: 25px;
+}
+.new__artifacts-grid-item-read-more{
+    color: #0B1919;
+}
+.new__artifacts-grid-item-read-more:hover {
+    color: #688B05; /* Меняем только цвет текста */
+    transition: 0.3s;
+}
+.new__artifacts-grid-item-read-more:hover + .arrow-right-second,
+.new__artifacts-grid-item-read-more:hover + .arrow-right-second::before,
+.new__artifacts-grid-item-read-more:hover + .arrow-right-second::after {
+    background-color: #688B05; /* Меняем цвет стрелочки */
+    transition: 0.3s;
 }
 
 .arrow-right-second {
@@ -462,13 +514,19 @@ header {
 .help__project-button {
     font-size: 16px;
     font-weight: 700;
-    color: #0B1919;
     background-color: #BAE249;
     padding: 15px;
     text-align: center;
     width: clamp(171px, 11.97vh, 230px);
     margin-top: 29px;
     font-family: "Open Sans", serif;
+}
+.help__project-button:hover{
+    background-color: #688B05;
+    transition: 0.3s;
+}
+.help__project-button a{
+    color: #0B1919;
 }
 
 @media (max-width: 1217px) {
